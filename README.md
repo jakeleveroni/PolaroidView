@@ -12,8 +12,8 @@ and the ExtensionMethods.swift files to your project
 
 A custom UIView that looks like a polaroid picture, very easy to integrate.
 Just create the polaroid UIView in and add it to the subview of a viewcontroller.
-The images, button images, and text can all be set using either helper functions
-that the UIPolaroidView defines, or thorugh a Dictionary of [String:AnyObject?] 
+The images, button images, and text can all be set using either the helper functions
+that the UIPolaroidView defines (setters), or through a Dictionary of [String:AnyObject?] 
 as shown in the example below:
 
 ```swift
