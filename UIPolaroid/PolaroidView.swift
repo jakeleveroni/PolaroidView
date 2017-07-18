@@ -60,6 +60,8 @@ public class PolaroidView: UIView {
         let button = UIButton()
         button.addTarget(self, action: #selector(self.didPressButtonOne), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.imageView?.contentMode = .scaleAspectFit
+        button.setContentHuggingPriority(UILayoutPriorityDefaultLow + 1, for: .horizontal)
         return button
     }()
     
@@ -67,6 +69,8 @@ public class PolaroidView: UIView {
         let button = UIButton()
         button.addTarget(self, action: #selector(self.didPressButtonTwo), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.imageView?.contentMode = .scaleAspectFit
+        button.setContentHuggingPriority(UILayoutPriorityDefaultLow + 1, for: .horizontal)
         return button
     }()
     
@@ -123,7 +127,7 @@ public class PolaroidView: UIView {
     // instead of magic numbers, declare them as a variable
     
     fileprivate let margin: CGFloat = 12
-    fileprivate let defaultUserImageWidth: CGFloat = 40
+    fileprivate let defaultUserImageWidth: CGFloat = 30
     
     override public init(frame: CGRect) {
         super.init(frame: frame)
@@ -137,6 +141,7 @@ public class PolaroidView: UIView {
     
     override public func layoutSubviews() {
         super.layoutSubviews()
+        userImageView.layoutIfNeeded()
         userImageView.layer.cornerRadius = userImageView.bounds.width/2
     }
     
@@ -186,7 +191,6 @@ fileprivate extension PolaroidView {
             userImageView.heightAnchor.constraint(equalTo: userImageView.widthAnchor)
         ])
         
-        userImageView.layoutIfNeeded()        
     }
     
     // you have to add @objc so the objc runtime can see the fileprivate method
