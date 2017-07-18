@@ -187,6 +187,8 @@ fileprivate extension PolaroidView {
             trailingAnchor.constraint(equalTo: verticalStackView.trailingAnchor, constant: margin),
             // 1:1 ratio
             mainImageView.widthAnchor.constraint(equalTo: mainImageView.heightAnchor),
+            buttonOne.widthAnchor.constraint(equalTo: buttonOne.heightAnchor),
+            buttonTwo.widthAnchor.constraint(equalTo: buttonTwo.heightAnchor),
             userImageView.widthAnchor.constraint(equalToConstant: defaultUserImageWidth),
             userImageView.heightAnchor.constraint(equalTo: userImageView.widthAnchor)
         ])
