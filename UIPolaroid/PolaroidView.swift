@@ -85,7 +85,7 @@ public class PolaroidView: UIView {
     
     public lazy var captionLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont(name: "Noteworthy-Bold", size: 16)
+        label.font = UIFont(name: "Noteworthy-Light", size: 12)
         label.textColor = .black
         label.numberOfLines = 2
         label.lineBreakMode = .byTruncatingTail
