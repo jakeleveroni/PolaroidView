@@ -13,12 +13,12 @@
 		B12C194B1F198F3B00069166 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B12C194A1F198F3B00069166 /* Assets.xcassets */; };
 		B12C194E1F198F3B00069166 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B12C194C1F198F3B00069166 /* LaunchScreen.storyboard */; };
 		B12C19561F198F8000069166 /* UIPolaroidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12C19551F198F8000069166 /* UIPolaroidView.swift */; };
-		B12C195D1F1BF66100069166 /* Comments-50.png in Resources */ = {isa = PBXBuildFile; fileRef = B12C19581F1BF66100069166 /* Comments-50.png */; };
-		B12C19601F1BF66100069166 /* LikeSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = B12C195B1F1BF66100069166 /* LikeSelected.png */; };
-		B12C19611F1BF66100069166 /* LikeUnselected.png in Resources */ = {isa = PBXBuildFile; fileRef = B12C195C1F1BF66100069166 /* LikeUnselected.png */; };
 		B12C19631F1C04CD00069166 /* ExtensionMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12C19621F1C04CD00069166 /* ExtensionMethods.swift */; };
-		B12C19661F1D917900069166 /* content.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B12C19641F1D917900069166 /* content.jpg */; };
-		B12C19671F1D917900069166 /* Solaire.png in Resources */ = {isa = PBXBuildFile; fileRef = B12C19651F1D917900069166 /* Solaire.png */; };
+		B12C196D1F1D936100069166 /* Comments-50.png in Resources */ = {isa = PBXBuildFile; fileRef = B12C19681F1D936100069166 /* Comments-50.png */; };
+		B12C196E1F1D936100069166 /* content.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B12C19691F1D936100069166 /* content.jpg */; };
+		B12C196F1F1D936100069166 /* LikeSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = B12C196A1F1D936100069166 /* LikeSelected.png */; };
+		B12C19701F1D936100069166 /* LikeUnselected.png in Resources */ = {isa = PBXBuildFile; fileRef = B12C196B1F1D936100069166 /* LikeUnselected.png */; };
+		B12C19711F1D936100069166 /* Solaire.png in Resources */ = {isa = PBXBuildFile; fileRef = B12C196C1F1D936100069166 /* Solaire.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,12 +30,12 @@
 		B12C194D1F198F3B00069166 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B12C194F1F198F3B00069166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B12C19551F198F8000069166 /* UIPolaroidView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIPolaroidView.swift; sourceTree = "<group>"; };
-		B12C19581F1BF66100069166 /* Comments-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Comments-50.png"; sourceTree = "<group>"; };
-		B12C195B1F1BF66100069166 /* LikeSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LikeSelected.png; sourceTree = "<group>"; };
-		B12C195C1F1BF66100069166 /* LikeUnselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LikeUnselected.png; sourceTree = "<group>"; };
 		B12C19621F1C04CD00069166 /* ExtensionMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionMethods.swift; sourceTree = "<group>"; };
-		B12C19641F1D917900069166 /* content.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = content.jpg; sourceTree = "<group>"; };
-		B12C19651F1D917900069166 /* Solaire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Solaire.png; sourceTree = "<group>"; };
+		B12C19681F1D936100069166 /* Comments-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Comments-50.png"; path = "Assets/Comments-50.png"; sourceTree = "<group>"; };
+		B12C19691F1D936100069166 /* content.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = content.jpg; path = Assets/content.jpg; sourceTree = "<group>"; };
+		B12C196A1F1D936100069166 /* LikeSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LikeSelected.png; path = Assets/LikeSelected.png; sourceTree = "<group>"; };
+		B12C196B1F1D936100069166 /* LikeUnselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LikeUnselected.png; path = Assets/LikeUnselected.png; sourceTree = "<group>"; };
+		B12C196C1F1D936100069166 /* Solaire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Solaire.png; path = Assets/Solaire.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,11 +84,11 @@
 		B12C19571F1BEFEE00069166 /* TestAssets */ = {
 			isa = PBXGroup;
 			children = (
-				B12C19641F1D917900069166 /* content.jpg */,
-				B12C19651F1D917900069166 /* Solaire.png */,
-				B12C19581F1BF66100069166 /* Comments-50.png */,
-				B12C195B1F1BF66100069166 /* LikeSelected.png */,
-				B12C195C1F1BF66100069166 /* LikeUnselected.png */,
+				B12C19681F1D936100069166 /* Comments-50.png */,
+				B12C19691F1D936100069166 /* content.jpg */,
+				B12C196A1F1D936100069166 /* LikeSelected.png */,
+				B12C196B1F1D936100069166 /* LikeUnselected.png */,
+				B12C196C1F1D936100069166 /* Solaire.png */,
 			);
 			name = TestAssets;
 			sourceTree = "<group>";
@@ -153,14 +153,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B12C19671F1D917900069166 /* Solaire.png in Resources */,
 				B12C194E1F198F3B00069166 /* LaunchScreen.storyboard in Resources */,
+				B12C196F1F1D936100069166 /* LikeSelected.png in Resources */,
 				B12C194B1F198F3B00069166 /* Assets.xcassets in Resources */,
-				B12C195D1F1BF66100069166 /* Comments-50.png in Resources */,
+				B12C196D1F1D936100069166 /* Comments-50.png in Resources */,
+				B12C196E1F1D936100069166 /* content.jpg in Resources */,
+				B12C19711F1D936100069166 /* Solaire.png in Resources */,
+				B12C19701F1D936100069166 /* LikeUnselected.png in Resources */,
 				B12C19491F198F3B00069166 /* Main.storyboard in Resources */,
-				B12C19611F1BF66100069166 /* LikeUnselected.png in Resources */,
-				B12C19661F1D917900069166 /* content.jpg in Resources */,
-				B12C19601F1BF66100069166 /* LikeSelected.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
