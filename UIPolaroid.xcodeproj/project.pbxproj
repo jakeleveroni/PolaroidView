@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89D2229D1F1E85430086365E /* PolaroidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D2229C1F1E85430086365E /* PolaroidView.swift */; };
+		89D222A01F1E93750086365E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89D2229F1F1E93750086365E /* QuartzCore.framework */; };
 		B12C19441F198F3B00069166 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12C19431F198F3B00069166 /* AppDelegate.swift */; };
 		B12C19461F198F3B00069166 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12C19451F198F3B00069166 /* ViewController.swift */; };
 		B12C19491F198F3B00069166 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B12C19471F198F3B00069166 /* Main.storyboard */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		89D2229C1F1E85430086365E /* PolaroidView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolaroidView.swift; sourceTree = "<group>"; };
+		89D2229F1F1E93750086365E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B12C19401F198F3B00069166 /* UIPolaroid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIPolaroid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B12C19431F198F3B00069166 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B12C19451F198F3B00069166 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,17 +47,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89D222A01F1E93750086365E /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		89D2229E1F1E93750086365E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89D2229F1F1E93750086365E /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B12C19371F198F3A00069166 = {
 			isa = PBXGroup;
 			children = (
 				B12C19421F198F3B00069166 /* UIPolaroid */,
 				B12C19411F198F3B00069166 /* Products */,
+				89D2229E1F1E93750086365E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +90,7 @@
 				B12C194C1F198F3B00069166 /* LaunchScreen.storyboard */,
 				B12C194F1F198F3B00069166 /* Info.plist */,
 				B12C19551F198F8000069166 /* UIPolaroidView.swift */,
+				89D2229C1F1E85430086365E /* PolaroidView.swift */,
 				B12C19621F1C04CD00069166 /* ExtensionMethods.swift */,
 			);
 			path = UIPolaroid;
@@ -173,6 +188,7 @@
 			files = (
 				B12C19561F198F8000069166 /* UIPolaroidView.swift in Sources */,
 				B12C19461F198F3B00069166 /* ViewController.swift in Sources */,
+				89D2229D1F1E85430086365E /* PolaroidView.swift in Sources */,
 				B12C19631F1C04CD00069166 /* ExtensionMethods.swift in Sources */,
 				B12C19441F198F3B00069166 /* AppDelegate.swift in Sources */,
 			);
@@ -338,6 +354,7 @@
 				B12C19541F198F3B00069166 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

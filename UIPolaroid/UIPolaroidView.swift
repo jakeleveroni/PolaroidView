@@ -11,6 +11,12 @@ import Foundation
 
 public class UIPolaroidView : UIView {
     
+    // Uppercase naming scheme is reserved for classes only, i.e. UIPolaroidView.
+    // Declarations should also be `public var variableName: Type` (mind the spaces)
+    // These should all be lower camel case. imageView, userImageView, buttonOne.
+    // In custom classes, I also prefer to lazily instantiate all my UI elements
+    // so they're never optionals.
+    
     public var ImageFrame : UIImageView? = nil
     public var UserImageView : UIImageView? = nil
     
@@ -22,6 +28,9 @@ public class UIPolaroidView : UIView {
     private var BaseInitComplete : Bool = false
     private let bgColor :UIColor = UIColor.white//UIColor(colorLiteralRed: 245.0/255.0, green: 245.0/255.0, blue: 220.0/255.0, alpha: 1)
     public override init(frame: CGRect) {
+        
+        // you can just pass in super.init(frame: frame)
+        
         super.init(frame: frame.integral)
         customInit()
     }
@@ -43,7 +52,19 @@ public class UIPolaroidView : UIView {
         self.layer.shadowOffset = CGSize(width: 5.0, height: 5.0)
         self.layer.shadowRadius = 5.0
         
+        
+        // You should separate these all into different small functions with definied
+        // purposes. It makes your code more readable for others
+        
         // init imageview
+        
+        // Magic numbers are very bad. You'll be scratching your head in a month wondering
+        // why you set something to 5% of the width. Also, integral is unnecessary.
+        
+        // Frame based layouts are also strongly discouraged every since autolayout was introduced.
+        // It's mostly reserved for custom UICollectionViewLayouts, animations, and a few other cases.
+        // For now stick to AutoLayout.
+        
         self.ImageFrame = UIImageView(frame: CGRect(x: Double(sWidth * 0.05),
                                                     y: Double(sHeight * 0.05),
                                                     width: Double(sWidth * 0.9),
@@ -166,6 +187,10 @@ public class UIPolaroidView : UIView {
     }
     
     public func InitFromConfig(config: [String:AnyObject?]) {
+        
+        // Hardcoded strings are really hard to work with.
+        // It requires someone to go through your code to understand
+        // how to use your view.
         
         if let mainImage = config["MainImage"] {
             ImageFrame?.image = mainImage as? UIImage
