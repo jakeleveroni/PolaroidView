@@ -11,34 +11,9 @@ and the ExtensionMethods.swift files to your project
 ## Usage
 
 A custom UIView that looks like a polaroid picture, very easy to integrate.
-Just create the polaroid UIView in and add it to the subview of a viewcontroller.
-The images, button images, and text can all be set using either the helper functions
-that the UIPolaroidView defines (setters), or through a Dictionary of [String:AnyObject?] 
-as shown in the example below:
+Just create the polaroid UIView and initialize it using the PolaroidViewBuilder defined in 
+PolaroidView.swift
 
-```swift
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        view.backgroundColor = UIColor(colorLiteralRed: 0, green: 88/255.0, blue: 122/255.0, alpha: 1)
-        let polaroid = UIPolaroidView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width * 0.75, height: UIScreen.main.bounds.height * 0.5).integral)
-        polaroid.center = CGPoint(x: UIScreen.main.bounds.width / 2, y: UIScreen.main.bounds.height / 2)
-        
-        let configDict : [String:AnyObject?] = [
-            "MainImage":UIImage(imageLiteralResourceName: "content.jpg"),
-            "UserImage":UIImage(imageLiteralResourceName: "Solaire.png"),
-            "ButtonOne-Unselected":UIImage(imageLiteralResourceName: "LikeUnselected.png"),
-            "ButtonOne-Selected":UIImage(imageLiteralResourceName: "LikeSelected.png"),
-            "ButtonTwo-Unselected":UIImage(imageLiteralResourceName: "Comments-50.png"),
-            "ButtonTwo-Selected":nil,
-            "UserName":"User Name" as AnyObject,
-            "Caption":"This is where an image caption can be shown, so that users can #hashtag all they want" as AnyObject
-        ]
-        
-        polaroid.InitFromConfig(config: configDict)
-        view.addSubview(polaroid)
-    }
-```
 Example Output:
 
 ![Could not fetch example image](https://github.com/jakeleveroni/UIPolaroidView/blob/master/PolaroidExample.png)
@@ -55,9 +30,8 @@ Example Output:
 version 0.1.0 - Initial release 
 
 ## Credits
-
-So far... ALL THE CREDIT GOES TO ME [jakeleveroni](https://github.com/jakeleveroni) but I really
-hope some more people would like to get involved and flush out some more features!
+**ryancstack** - UPdated the way the PolaroidView is created and how it 
+is laid out in its parent view 
 
 ## Future Features
 * Automatic resizing/scaling of images for the main image view
