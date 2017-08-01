@@ -9,6 +9,9 @@
 import Foundation
 import UIKit
 
+
+// UILabels center vertically by default. Also, magic numbers are really confusing
+
 // vertically centers text
 extension UITextView {
     func centerVertically() {
