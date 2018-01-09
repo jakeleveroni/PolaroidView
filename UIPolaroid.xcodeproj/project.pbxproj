@@ -14,7 +14,6 @@
 		B12C19491F198F3B00069166 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B12C19471F198F3B00069166 /* Main.storyboard */; };
 		B12C194B1F198F3B00069166 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B12C194A1F198F3B00069166 /* Assets.xcassets */; };
 		B12C194E1F198F3B00069166 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B12C194C1F198F3B00069166 /* LaunchScreen.storyboard */; };
-		B12C19561F198F8000069166 /* UIPolaroidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12C19551F198F8000069166 /* UIPolaroidView.swift */; };
 		B12C19631F1C04CD00069166 /* ExtensionMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12C19621F1C04CD00069166 /* ExtensionMethods.swift */; };
 		B12C196D1F1D936100069166 /* Comments-50.png in Resources */ = {isa = PBXBuildFile; fileRef = B12C19681F1D936100069166 /* Comments-50.png */; };
 		B12C196E1F1D936100069166 /* content.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B12C19691F1D936100069166 /* content.jpg */; };
@@ -33,7 +32,6 @@
 		B12C194A1F198F3B00069166 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B12C194D1F198F3B00069166 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B12C194F1F198F3B00069166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B12C19551F198F8000069166 /* UIPolaroidView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIPolaroidView.swift; sourceTree = "<group>"; };
 		B12C19621F1C04CD00069166 /* ExtensionMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionMethods.swift; sourceTree = "<group>"; };
 		B12C19681F1D936100069166 /* Comments-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Comments-50.png"; path = "Assets/Comments-50.png"; sourceTree = "<group>"; };
 		B12C19691F1D936100069166 /* content.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = content.jpg; path = Assets/content.jpg; sourceTree = "<group>"; };
@@ -89,7 +87,6 @@
 				B12C194A1F198F3B00069166 /* Assets.xcassets */,
 				B12C194C1F198F3B00069166 /* LaunchScreen.storyboard */,
 				B12C194F1F198F3B00069166 /* Info.plist */,
-				B12C19551F198F8000069166 /* UIPolaroidView.swift */,
 				89D2229C1F1E85430086365E /* PolaroidView.swift */,
 				B12C19621F1C04CD00069166 /* ExtensionMethods.swift */,
 			);
@@ -186,7 +183,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B12C19561F198F8000069166 /* UIPolaroidView.swift in Sources */,
 				B12C19461F198F3B00069166 /* ViewController.swift in Sources */,
 				89D2229D1F1E85430086365E /* PolaroidView.swift in Sources */,
 				B12C19631F1C04CD00069166 /* ExtensionMethods.swift in Sources */,

@@ -3,7 +3,6 @@
 //  UIPolaroid
 //
 //  Created by Ryan Stack on 7/18/17.
-//  Copyright © 2017 Jacob Leveroni. All rights reserved.
 //
 
 import UIKit
@@ -117,15 +116,7 @@ public class PolaroidView: UIView {
         return stackView
     }()
     
-    
-    // always instantiate delegates as weak or else you will have a retain cycle
-    // Object A strongly points to Object B and vice versa. They'll never deallocate
-    // properly.
-    
     weak var delegate: PolaroidViewDelegate?
-    
-    // instead of magic numbers, declare them as a variable
-    
     fileprivate let margin: CGFloat = 12
     fileprivate let defaultUserImageWidth: CGFloat = 30
     
@@ -144,9 +135,6 @@ public class PolaroidView: UIView {
         userImageView.layoutIfNeeded()
         userImageView.layer.cornerRadius = userImageView.bounds.width/2
     }
-    
-    // This is essentiall the same as using a view model-esque
-    // sort of class. It takes in an object that describes the view.
     
     public func render(builder: PolaroidBuilder) {
         mainImageView.image = builder.mainImage
@@ -169,7 +157,6 @@ fileprivate extension PolaroidView {
         layer.borderColor = UIColor.black.cgColor
         layer.borderWidth = 0.5
         
-
         verticalStackView.addArrangedSubview(mainImageView)
         verticalStackView.addArrangedSubview(horizontalStackView)
         verticalStackView.addArrangedSubview(captionLabel)
@@ -194,8 +181,6 @@ fileprivate extension PolaroidView {
         ])
         
     }
-    
-    // you have to add @objc so the objc runtime can see the fileprivate method
     
     @objc func didPressButtonOne(sender: UIButton) {
         sender.isSelected = !sender.isSelected
